@@ -2,6 +2,7 @@ if [ -n "$GITHUB_WORKSPACE" ]; then
   echo "Github actions detected."
 else
   echo "Non-github actions detected."
+  echo "Setting variables up..."
   export GITHUB_WORKSPACE=($PWD)
 fi
 cd $GITHUB_WORKSPACE
