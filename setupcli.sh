@@ -6,7 +6,7 @@ else
   export GITHUB_WORKSPACE=($PWD)
 fi
 cd $GITHUB_WORKSPACE
-pwd
+echo "Building at $(pwd)"
 chmod +x *
 mkdir pbskids-dl_deb
 cd ./pbskids-dl_deb
