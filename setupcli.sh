@@ -1,5 +1,5 @@
 if [ -n "$GITHUB_WORKSPACE" ]; then
-  echo "Github actions detected. No action needed"
+  echo "Github actions detected. No action needed."
 else
   echo "Non-github actions detected."
   echo "Setting variables up..."
