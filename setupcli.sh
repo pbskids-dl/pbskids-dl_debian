@@ -4,6 +4,7 @@ else
   echo "Non-github actions detected."
   export GITHUB_WORKSPACE=($PWD)
 fi
+echo "Dependabot"
 cd $GITHUB_WORKSPACE
 pwd
 chmod +x *
