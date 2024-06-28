@@ -11,3 +11,6 @@ while IFS= read -r arg; do
 	exit 1
     fi
 done < "$1"
+
+line=$(head -n 1 $1)
+pbskids-dl $line
