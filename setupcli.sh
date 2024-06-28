@@ -13,6 +13,7 @@ cd ./pbskids-dl_deb
 mkdir -p usr/bin
 cd ./usr/bin
 cp $GITHUB_WORKSPACE/pbskids-dl.py .
+cp $GITHUB_WORKSPACE/pbskids-dl.sh .
 ln -s ./pbskids-dl.py ./pbskids-dl
 chmod +x *
 cd ../../
