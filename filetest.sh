@@ -4,7 +4,7 @@ if [ -z "$1" ]; then
     exit 1
 fi
 while IFS= read -r arg; do
-    pbskids-dl $arg
+    pbskids-dl -q $arg
     pbskids-dl.sh $arg
     if [ $? -ne 0 ]; then
 	echo "Error: Command failed with non-zero exit code $?. Exiting script."
