@@ -22,6 +22,6 @@ cd ./DEBIAN
 cp $GITHUB_WORKSPACE/.debian/control ./control
 cd $GITHUB_WORKSPACE
 dpkg --build ./pbskids-dl_deb
-sha256sum pbskids-dl_deb.deb > pbskids-dl.sha256sum
+sha256sum pbskids-dl_deb.deb | gzip > pbskids-dl.sha256sum.gz
 echo "Build finished!"
 echo "Check for errors after installing package."
