@@ -21,3 +21,5 @@ cp $GITHUB_WORKSPACE/.debian/control2 ./control
 cd $GITHUB_WORKSPACE
 dpkg --build ./pbskids-dl_gui_deb
 sha256sum pbskids-dl_gui_deb.deb | gzip > pbskids-dl_gui.sha256sum.gz
+echo "Build finished!"
+echo "Check for errors after installing package."
