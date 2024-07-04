@@ -1,8 +1,12 @@
-Package: pbskids-dl.gui
+Package: pbskids-dl
+Section: tools
 Version: 3.1
+Priority: optional
 Maintainer: NexusSfan <nexussfan@duck.com>
-Depends: python3, python3-tk, python3-urllib3, python3-bs4, python3-pip
+Depends: python3, curl, aria2, bash, awk, sed, python3-tk, python3-urllib3, python3-bs4, python3-lxml, python3-pip
 Architecture: all
-Recommends: pbskids-dl
+Suggests: pbskids-dl.gui
 Homepage: https://github.com/pbskids-dl/pbskids-dl
-Description: A downloader for PBS Kids videos (GUI version)
+Description: A downloader for PBS Kids videos
+Vcs-Git: https://github.com/pbskids-dl/pbskids-dl.git
+Vcs-browser: https://github.com/pbskids-dl/pbskids-dl
