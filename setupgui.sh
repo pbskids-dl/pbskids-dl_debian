@@ -8,8 +8,8 @@ fi
 cd $GITHUB_WORKSPACE
 echo "Building at $(pwd)"
 chmod +x *
-mkdir pbskids-dl_gui_deb
-cd ./pbskids-dl_gui_deb
+mkdir pbskids-dl_debian_gui
+cd ./pbskids-dl_debian_gui
 mkdir -p usr/bin
 cd ./usr/bin
 cp $GITHUB_WORKSPACE/pbskids-dl_gui.py .
@@ -19,7 +19,7 @@ mkdir DEBIAN
 cd ./DEBIAN
 cp $GITHUB_WORKSPACE/.debian/control2 ./control
 cd $GITHUB_WORKSPACE
-dpkg --build ./pbskids-dl_gui_deb
-sha256sum pbskids-dl_gui_deb.deb > pbskids-dl.sha256sum
+dpkg --build ./pbskids-dl_debian_gui
+sha256sum pbskids-dl_debian_gui.deb > pbskids-dl.sha256sum
 echo "Build finished!"
 echo "Check for errors after installing package."
