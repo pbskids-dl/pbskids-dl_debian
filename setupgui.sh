@@ -18,6 +18,7 @@ cd ../../
 mkdir DEBIAN
 cd ./DEBIAN
 cp $GITHUB_WORKSPACE/.debian/control2 ./control
+cp $GITHUB_WORKSPACE/.debian/changelog2 ./changelog
 cd $GITHUB_WORKSPACE
 dpkg --build ./pbskids-dl_debian_gui
 sha256sum pbskids-dl_debian_gui.deb > pbskids-dl.sha256sum
