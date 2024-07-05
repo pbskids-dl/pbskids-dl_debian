@@ -21,7 +21,7 @@ cd ./DEBIAN
 cp $GITHUB_WORKSPACE/.debian/control2 ./control
 cp $GITHUB_WORKSPACE/.debian/changelog ./changelog
 cd $GITHUB_WORKSPACE
-dpkg --build ./pbskids-dl_debian_gui
+dpkg-deb --root-owner-group --build ./pbskids-dl_debian_gui
 sha256sum pbskids-dl_debian_gui.deb > pbskids-dl.sha256sum
 echo "Build finished!"
 echo "Check for errors after installing package."
