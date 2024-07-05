@@ -1,0 +1,11 @@
+Package: pbskids-dl
+Section: tools
+Version: 3.2
+Priority: optional
+Maintainer: NexusSfan <nexussfan@duck.com>
+Depends: pbskids-dl.cli pbskids-dl.gui
+Architecture: all
+Homepage: https://github.com/pbskids-dl/pbskids-dl
+Description: A downloader for PBS Kids videos
+Vcs-Git: https://github.com/pbskids-dl/pbskids-dl.git
+Vcs-browser: https://github.com/pbskids-dl/pbskids-dl
