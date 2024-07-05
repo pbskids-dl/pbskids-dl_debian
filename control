@@ -1,4 +1,4 @@
-Package: pbskids-dl
+Package: pbskids-dl.cli
 Section: tools
 Version: 3.1
 Priority: optional
