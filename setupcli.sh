@@ -1,3 +1,4 @@
+#!/bin/bash
 if [ -n "$GITHUB_WORKSPACE" ]; then
   echo "Github actions detected. No action needed."
 else
