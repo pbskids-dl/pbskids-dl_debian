@@ -17,6 +17,6 @@ cp $GITHUB_WORKSPACE/.debian/control3 ./control3
 cp $GITHUB_WORKSPACE/.debian/changelog ./changelog
 cd $GITHUB_WORKSPACE
 dpkg --build ./pbskids-dl_debian_all
-sha256sum pbskids-dl_debian_all.deb > pbskids-dl.sha256sum
+sha256sum -b pbskids-dl_debian_all.deb > pbskids-dl.sha256sum
 echo "Build finished!"
 echo "Check for errors after installing package."
