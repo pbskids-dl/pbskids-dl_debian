@@ -23,6 +23,6 @@ cp $GITHUB_WORKSPACE/.debian/control ./control
 cp $GITHUB_WORKSPACE/.debian/changelog ./changelog
 cd $GITHUB_WORKSPACE
 dpkg --build ./pbskids-dl_debian_cli
-sha256sum pbskids-dl_debian_cli.deb > pbskids-dl.sha256sum
+sha256sum -b pbskids-dl_debian_cli.deb > pbskids-dl.sha256sum
 echo "Build finished!"
 echo "Check for errors after installing package."
