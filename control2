@@ -6,3 +6,5 @@ Architecture: all
 Recommends: pbskids-dl
 Homepage: https://github.com/pbskids-dl/pbskids-dl
 Description: A downloader for PBS Kids videos (GUI version)
+Vcs-Git: https://github.com/pbskids-dl/pbskids-dl.git
+Vcs-browser: https://github.com/pbskids-dl/pbskids-dl
