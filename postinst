@@ -1,1 +1,2 @@
+#!/usr/bin/env bash
 update-alternatives --install /usr/bin/pbskids-dl pbskids-dl /usr/lib/pbskids-dl/pbskids-dl.py 100
