@@ -1,0 +1,1 @@
+update-alternatives --remove pbskids-dl /usr/bin/pbskids-dl
