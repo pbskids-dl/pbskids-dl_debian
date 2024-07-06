@@ -28,6 +28,7 @@ mkdir DEBIAN
 cd ./DEBIAN
 cp $GITHUB_WORKSPACE/.debian/control ./control
 cp $GITHUB_WORKSPACE/.debian/postinst ./postinst
+cp $GITHUB_WORKSPACE/.debian/prerm ./prerm
 cp $GITHUB_WORKSPACE/.debian/changelog ./changelog
 cd $GITHUB_WORKSPACE
 dpkg-deb --root-owner-group --build ./pbskids-dl_debian
