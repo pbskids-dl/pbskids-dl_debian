@@ -9,8 +9,8 @@ fi
 cd $GITHUB_WORKSPACE
 echo "Building at $(pwd)"
 chmod +x *
-mkdir pbskids-dl_debian_cli
-cd ./pbskids-dl_debian_cli
+mkdir pbskids-dl_debian
+cd ./pbskids-dl_debian
 mkdir -p usr/lib/pbskids-dl
 cd ./usr/lib/pbskids-dl
 cp $GITHUB_WORKSPACE/pbskids-dl.py .
