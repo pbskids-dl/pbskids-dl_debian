@@ -19,9 +19,9 @@ cp $GITHUB_WORKSPACE/pbskids-dl_gui.py .
 cp $GITHUB_WORKSPACE/.debian/version .
 cd ../../
 mkdir bin
-ln -s ./pbskids-dl.py /usr/lib/pbskids-dl/pbskids-dl.py
-ln -s ./pbskids-dl_gui.py /usr/lib/pbskids-dl/pbskids-dl_gui.py
-ln -s ./pbskids-dl_gui.sh /usr/lib/pbskids-dl/pbskids-dl.sh
+ln -sf ./pbskids-dl.py /usr/lib/pbskids-dl/pbskids-dl.py
+ln -sf ./pbskids-dl_gui.py /usr/lib/pbskids-dl/pbskids-dl_gui.py
+ln -sf ./pbskids-dl_gui.sh /usr/lib/pbskids-dl/pbskids-dl.sh
 chmod +x *
 cd ../../
 mkdir DEBIAN
