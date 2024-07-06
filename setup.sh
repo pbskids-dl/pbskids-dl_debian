@@ -11,18 +11,23 @@ echo "Building at $(pwd)"
 chmod +x *
 mkdir pbskids-dl_debian_cli
 cd ./pbskids-dl_debian_cli
-mkdir -p usr/bin
-cd ./usr/bin
+mkdir -p usr/lib/pbskids-dl
+cd ./usr/lib/pbskids-dl
 cp $GITHUB_WORKSPACE/pbskids-dl.py .
 cp $GITHUB_WORKSPACE/pbskids-dl.sh .
-ln -s ./pbskids-dl.py ./pbskids-dl
 cp $GITHUB_WORKSPACE/pbskids-dl_gui.py .
-ln -s ./pbskids-dl_gui.py ./pbskids-dl_gui
+cp $GITHUB_WORKSPACE/.debian/version .
+cd ../../
+mkdir bin
+ln -s ./pbskids-dl.py /usr/lib/pbskids-dl/pbskids-dl.py
+ln -s ./pbskids-dl_gui.py /usr/lib/pbskids-dl/pbskids-dl_gui.py
+ln -s ./pbskids-dl_gui.sh /usr/lib/pbskids-dl/pbskids-dl.sh
 chmod +x *
 cd ../../
 mkdir DEBIAN
 cd ./DEBIAN
 cp $GITHUB_WORKSPACE/.debian/control ./control
+cp $GITHUB_WORKSPACE/.debian/postinst ./postinst
 cp $GITHUB_WORKSPACE/.debian/changelog ./changelog
 cd $GITHUB_WORKSPACE
 dpkg-deb --root-owner-group --build ./pbskids-dl_debian
