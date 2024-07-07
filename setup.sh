@@ -32,6 +32,6 @@ cp $GITHUB_WORKSPACE/.debian/prerm ./prerm
 cp $GITHUB_WORKSPACE/.debian/changelog ./changelog
 cd $GITHUB_WORKSPACE
 dpkg-deb --root-owner-group --build ./pbskids-dl_debian
-sha256sum -b pbskids-dl_debian.deb > pbskids-dl_debian.sha256sum
+sha256sum -b pbskids-dl_debian.deb > pbskids-dl.sha256sum
 echo "Build finished!"
 echo "Check for errors after installing package."
