@@ -21,7 +21,8 @@ cp $GITHUB_WORKSPACE/pbskids-dl_gui.py .
 cp $GITHUB_WORKSPACE/.debian/version .
 cd ../../
 mkdir bin
-ls -al pwd
+ls -al
+pwd
 ln -s ./pbskids-dl.py ../lib/pbskids-dl/pbskids-dl.py
 ln -s ./pbskids-dl_gui.py ../lib/pbskids-dl/pbskids-dl_gui.py
 ln -s ./pbskids-dl_gui.sh ../lib/pbskids-dl/pbskids-dl.sh
