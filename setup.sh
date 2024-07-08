@@ -24,9 +24,9 @@ mkdir bin
 cd ./bin
 ls -al
 pwd
-ln -s ./pbskids-dl.py ../lib/pbskids-dl/pbskids-dl.py
-ln -s ./pbskids-dl_gui.py ../lib/pbskids-dl/pbskids-dl_gui.py
-ln -s ./pbskids-dl_gui.sh ../lib/pbskids-dl/pbskids-dl.sh
+ln -s ../lib/pbskids-dl/pbskids-dl.py ./pbskids-dl.py
+ln -s ../lib/pbskids-dl/pbskids-dl_gui.py ./pbskids-dl_gui.py
+ln -s ../lib/pbskids-dl/pbskids-dl.sh ./pbskids-dl.sh
 chmod +x *
 cd ../../
 mkdir DEBIAN
