@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
 update-alternatives --remove pbskids-dl /usr/bin/pbskids-dl
+update-alternatives --remove pbskids-dl_gui /usr/bin/pbskids-dl_gui
