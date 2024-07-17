@@ -18,3 +18,6 @@ pbskids-dl $line
 mkdir aa2
 cd ./aa2
 pbskids-dl.sh $line
+mkdir aa3
+cd ./aa3
+pbskids-dl -q -f aa3.mp4 $line 
