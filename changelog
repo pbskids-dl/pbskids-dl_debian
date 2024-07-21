@@ -56,4 +56,12 @@ pbskids-dl (1.1.1) obsolete; urgency=low
 * Mark pbskids-dl_fast as EOF
 * Make pbskids-dl more efficient
 
- -- NexusSfan <nexussfan@duck.com>  Sat, 24 Aug 2023 03:10 -0000
+ -- NexusSfan <nexussfan@duck.com>  Thu, 24 Aug 2023 03:10 -0000
+
+pbskids-dl (1.1) obsolete; urgency=low
+
+* Added help
+* Fixed bug with downloading videos
+* Sanitized video titles
+
+ -- NexusSfan <nexussfan@duck.com>  Sat, 15 Jul 2023 15:54 -0000
