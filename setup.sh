@@ -13,8 +13,6 @@ mkdir pbskids-dl_debian
 cd ./pbskids-dl_debian
 mkdir -p usr/lib/pbskids-dl
 cd ./usr/lib/pbskids-dl
-ls -al
-pwd
 cp $GITHUB_WORKSPACE/pbskids-dl.py .
 cp $GITHUB_WORKSPACE/pbskids-dl.sh .
 cp $GITHUB_WORKSPACE/pbskids-dl_gui.py .
@@ -22,8 +20,6 @@ cp $GITHUB_WORKSPACE/.debian/version .
 cd ../../
 mkdir bin
 cd ./bin
-ls -al
-pwd
 ln -s ../lib/pbskids-dl/pbskids-dl.py ./pbskids-dl.py
 ln -s ../lib/pbskids-dl/pbskids-dl_gui.py ./pbskids-dl_gui.py
 ln -s ../lib/pbskids-dl/pbskids-dl.sh ./pbskids-dl.sh
