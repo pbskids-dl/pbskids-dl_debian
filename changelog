@@ -1,4 +1,16 @@
-pbskids-dl (3.1) stable; urgency=low
+pbskids-dl (3.2) stable; urgency=low
+
+* Matrixes for GH actions
+* Better gitignore again
+* CODEOWNERS
+* GPL-2.0-or-later
+* Adds filename argument
+* Fixes a bug with downloading... somewhat.
+* DO NOT RUN THE COMMAND PIP INSTALL TK
+
+ -- NexusSfan <nexussfan@duck.com>  Wen, 24 Jul 2024 12:21 -0000
+
+pbskids-dl (3.1) oldstable; urgency=low
 
 * Bumped actions/checkout from 4.1.5 to 4.1.7
 * Added back pbskids-dl.sh in Debian packages.
@@ -15,7 +27,7 @@ pbskids-dl (3.1) stable; urgency=low
 
  -- NexusSfan <nexussfan@duck.com>  Fri, 28 Jun 2024 16:29 -0000
 
-pbskids-dl (3.0) oldstable; urgency=medium
+pbskids-dl (3.0) oldoldstable; urgency=medium
 
 * Python 3 support
 * Error handling in python
