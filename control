@@ -1,6 +1,6 @@
 Package: pbskids-dl
 Section: tools
-Version: 3.2
+Version: 3.2.0
 Priority: optional
 Maintainer: NexusSfan <nexussfan@duck.com>
 Depends: python3, curl, aria2, bash, awk, sed, python3-tk, python3-urllib3, python3-bs4, python3-lxml, python3-pip
